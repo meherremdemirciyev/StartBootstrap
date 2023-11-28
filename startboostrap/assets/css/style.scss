@@ -1,0 +1,378 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+.common_btn{
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+@mixin foot_icons($padding){
+    background-color: #1d809f;
+    color: #fff;
+    border-radius: 100%;
+    padding: $padding;
+    transition: .5s;
+    margin: 0 1px;
+    cursor: pointer;
+    &:hover{
+        background-color: #155d74;
+    }
+}
+
+.box{
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 17rem 0;
+    text-align: center;
+    h1{
+        font-size: 5.5rem;
+        color: $text_color;
+        margin-bottom: 4px;
+    }
+    h3{
+        font-style: italic;
+        font-size: 28px;
+        color: $text_color;
+        margin-bottom: 50px;
+    }
+    a{
+        background-color: #1d809f;
+        @extend .common_btn;
+        &:hover{
+            background-color: #0a627c;
+        }
+    }
+}
+
+.box2{
+    padding: 7rem 0;
+    text-align: center;
+    h2{
+        color: $text_color;
+        font-size: 2rem; 
+        margin-bottom: 8px;
+    }
+    p{
+        color: $text_color;
+        font-size: 20px;
+        margin-bottom: 4rem;
+        span{
+            text-decoration: underline;
+            color: #1d809f ;
+            cursor: pointer;
+        }
+    }
+    a{
+        background-color: $text_color;
+        @extend .common_btn;
+        &:hover{
+            background-color: #424649;
+        }
+    }
+}
+
+#Offer{
+    background-color: #1d809f;
+    padding: 7rem 0;
+    text-align: center;
+    .content{
+        h3{
+            color: #ecb807;
+            font-size: 1rem;
+        }
+        h2{
+            font-size: 48px;
+            color: #fff;
+            margin-bottom: 4rem;
+        }
+    }
+    .col-lg-3{
+        span{
+            background-color: #fff;
+            padding: 40px 45px;
+            i{
+                font-size: 20px;
+            }
+        }
+        h4{
+            font-size: 24px;
+            color: #fff;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 1rem;
+            color: #fff;
+        }
+    }
+}
+
+#Website{
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+    text-align: center;
+    h2{
+        color: $text_color;
+        margin-bottom: 48px;
+        font-size: 56px;
+        font-weight: bold;
+    }
+    a{
+        @extend .common_btn;
+        background-color: #1d809f;
+        &:hover{
+            background-color: #0a627c;
+        }
+    }
+}
+
+#Projects{
+    margin-top: 80px;
+    .portfolio{
+        text-align: center;
+        h3{
+            color: #ecb807;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 40px;
+            color: $text_color;
+            margin-bottom: 48px;
+            font-weight: bold;
+        }
+    }
+    .image{
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            .overlay{
+                opacity: 0.8;
+            }
+        }
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #1d809f;
+            opacity: 0;
+            transition: .5s;
+        }
+        img{
+            transition: 0.5s;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    .image_content{
+        position: absolute;
+        bottom: 40px;
+        left: 60px;
+        color: #fff;
+    }
+}
+
+#Five{
+    background-color: #1d809f;
+    text-align: center;
+    padding: 7rem 0;
+    margin-top: 7rem;
+    h2{
+        font-size: 32px;
+        margin-bottom: 24px;
+        color: #fff;
+    }
+    .buttons{
+        .click{
+            @extend .common_btn;
+            background-color: #fff;
+            color: $text_color;
+            margin-right: 10px;
+            &:hover{
+                background-color: rgb(236, 221, 221);
+            }
+        }
+        .look{
+            @extend .common_btn;
+            background-color: $text_color;
+            margin-left: 10px;
+            &:hover{
+                background-color: #424649;
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 5rem 0;
+    .icons{
+        .first_icon{
+            i{
+                padding: 15px 20px !important;
+            }
+        }
+        .face{
+            @include foot_icons(20px 23px)
+        }
+        .twit{
+            @include foot_icons(20px);
+        }
+        .git{
+            @include foot_icons(20px)
+        }
+    }
+    p{
+        color: #6c757d;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+#Sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    .sidebar-nav{
+        display: none;
+        list-style: none;
+        background-color: #1d809f;
+        height: 100vh;
+        .sidebar-brand{
+            margin: 0 100px 20px 0;
+            padding-top: 13px;
+            a{
+                color: #fff;
+                font-weight: 200;
+                font-size: 20px;
+            }
+        }
+        .sidebar-nav-item{
+            margin: 0 100px 20px 0;
+            a{
+                color: #fff;
+                font-weight: 200;
+                font-size: 15px;
+                display: block;
+            }
+            &:hover{
+                background-color: #3c4041;
+            }
+        }
+    }
+    i{
+        padding: 10px;
+        color: #fff;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        padding: 12px;
+        background-color: #343A40;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+   
+}
+
+.active{
+    display: block !important;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+        overflow: visible;
+        box-sizing: content-box;
+        height: 1em;
+        vertical-align: -0.125em;
+        display: var(--fa-display,inline-block);
+    }
+}
+
+@media(max-width:576px){
+    .box{
+        padding: 158px 0;
+        h1{
+            font-size: 2rem;
+            padding: 0 105px;
+            font-weight: bold;
+        }
+        h3{
+            font-size: 20px;
+            padding: 0 30px;
+        }
+    }
+
+    .box2{
+        h2{
+            font-size: 22px;
+            padding: 0px 30px
+        }
+        p{
+            font-size: 16px;
+            padding: 0 30px;
+        }
+    }
+
+    #Offer{
+        h3{
+            font-size: 13px;
+        }
+        h2{
+            font-size: 30px;
+        }   
+        .col-lg-3{
+            margin-bottom: 50px;
+        }
+    }
+
+    #Website{
+        h2{
+            font-size: 45px;
+        }
+    }
+
+    #Projects{
+        h3{
+            margin-bottom: 0px;
+        }
+        .col-lg-6{
+            margin-bottom: 15px;
+        }
+    }
+
+    #Five{
+        h2{
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+    }
+
+    footer{
+        p{
+            font-size: 11px;
+        }
+    }
+
+    #Sidebar{
+        width: 50%;
+    }
+}

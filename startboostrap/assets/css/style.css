@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.common_btn, #Five .buttons .look, #Five .buttons .click, #Website a, .box2 a, .box a {
+  font-size: 1rem;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.box {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 17rem 0;
+  text-align: center;
+}
+.box h1 {
+  font-size: 5.5rem;
+  color: #212529;
+  margin-bottom: 4px;
+}
+.box h3 {
+  font-style: italic;
+  font-size: 28px;
+  color: #212529;
+  margin-bottom: 50px;
+}
+.box a {
+  background-color: #1d809f;
+}
+.box a:hover {
+  background-color: #0a627c;
+}
+
+.box2 {
+  padding: 7rem 0;
+  text-align: center;
+}
+.box2 h2 {
+  color: #212529;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.box2 p {
+  color: #212529;
+  font-size: 20px;
+  margin-bottom: 4rem;
+}
+.box2 p span {
+  text-decoration: underline;
+  color: #1d809f;
+  cursor: pointer;
+}
+.box2 a {
+  background-color: #212529;
+}
+.box2 a:hover {
+  background-color: #424649;
+}
+
+#Offer {
+  background-color: #1d809f;
+  padding: 7rem 0;
+  text-align: center;
+}
+#Offer .content h3 {
+  color: #ecb807;
+  font-size: 1rem;
+}
+#Offer .content h2 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+#Offer .col-lg-3 span {
+  background-color: #fff;
+  padding: 40px 45px;
+}
+#Offer .col-lg-3 span i {
+  font-size: 20px;
+}
+#Offer .col-lg-3 h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 50px;
+}
+#Offer .col-lg-3 p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+#Website {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 0;
+  text-align: center;
+}
+#Website h2 {
+  color: #212529;
+  margin-bottom: 48px;
+  font-size: 56px;
+  font-weight: bold;
+}
+#Website a {
+  background-color: #1d809f;
+}
+#Website a:hover {
+  background-color: #0a627c;
+}
+
+#Projects {
+  margin-top: 80px;
+}
+#Projects .portfolio {
+  text-align: center;
+}
+#Projects .portfolio h3 {
+  color: #ecb807;
+  font-size: 16px;
+  font-weight: bold;
+}
+#Projects .portfolio h2 {
+  font-size: 40px;
+  color: #212529;
+  margin-bottom: 48px;
+  font-weight: bold;
+}
+#Projects .image {
+  position: relative;
+  cursor: pointer;
+}
+#Projects .image:hover .overlay {
+  opacity: 0.8;
+}
+#Projects .image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1d809f;
+  opacity: 0;
+  transition: 0.5s;
+}
+#Projects .image img {
+  transition: 0.5s;
+}
+#Projects .image img:hover {
+  transform: scale(0.9);
+}
+#Projects .image_content {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  color: #fff;
+}
+
+#Five {
+  background-color: #1d809f;
+  text-align: center;
+  padding: 7rem 0;
+  margin-top: 7rem;
+}
+#Five h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+#Five .buttons .click {
+  background-color: #fff;
+  color: #212529;
+  margin-right: 10px;
+}
+#Five .buttons .click:hover {
+  background-color: rgb(236, 221, 221);
+}
+#Five .buttons .look {
+  background-color: #212529;
+  margin-left: 10px;
+}
+#Five .buttons .look:hover {
+  background-color: #424649;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem 0;
+}
+footer .icons .first_icon i {
+  padding: 15px 20px !important;
+}
+footer .icons .face {
+  background-color: #1d809f;
+  color: #fff;
+  border-radius: 100%;
+  padding: 20px 23px;
+  transition: 0.5s;
+  margin: 0 1px;
+  cursor: pointer;
+}
+footer .icons .face:hover {
+  background-color: #155d74;
+}
+footer .icons .twit {
+  background-color: #1d809f;
+  color: #fff;
+  border-radius: 100%;
+  padding: 20px;
+  transition: 0.5s;
+  margin: 0 1px;
+  cursor: pointer;
+}
+footer .icons .twit:hover {
+  background-color: #155d74;
+}
+footer .icons .git {
+  background-color: #1d809f;
+  color: #fff;
+  border-radius: 100%;
+  padding: 20px;
+  transition: 0.5s;
+  margin: 0 1px;
+  cursor: pointer;
+}
+footer .icons .git:hover {
+  background-color: #155d74;
+}
+footer p {
+  color: #6c757d;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+#Sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#Sidebar .sidebar-nav {
+  display: none;
+  list-style: none;
+  background-color: #1d809f;
+  height: 100vh;
+}
+#Sidebar .sidebar-nav .sidebar-brand {
+  margin: 0 100px 20px 0;
+  padding-top: 13px;
+}
+#Sidebar .sidebar-nav .sidebar-brand a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+}
+#Sidebar .sidebar-nav .sidebar-nav-item {
+  margin: 0 100px 20px 0;
+}
+#Sidebar .sidebar-nav .sidebar-nav-item a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  display: block;
+}
+#Sidebar .sidebar-nav .sidebar-nav-item:hover {
+  background-color: #3c4041;
+}
+#Sidebar i {
+  padding: 10px;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 12px;
+  background-color: #343A40;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.active {
+  display: block !important;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+}
+.scroll-to-top svg:not(:host).svg-inline--fa, .scroll-to-top svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+  height: 1em;
+  vertical-align: -0.125em;
+  display: var(--fa-display, inline-block);
+}
+
+@media (max-width: 576px) {
+  .box {
+    padding: 158px 0;
+  }
+  .box h1 {
+    font-size: 2rem;
+    padding: 0 105px;
+    font-weight: bold;
+  }
+  .box h3 {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .box2 h2 {
+    font-size: 22px;
+    padding: 0px 30px;
+  }
+  .box2 p {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+  #Offer h3 {
+    font-size: 13px;
+  }
+  #Offer h2 {
+    font-size: 30px;
+  }
+  #Offer .col-lg-3 {
+    margin-bottom: 50px;
+  }
+  #Website h2 {
+    font-size: 45px;
+  }
+  #Projects h3 {
+    margin-bottom: 0px;
+  }
+  #Projects .col-lg-6 {
+    margin-bottom: 15px;
+  }
+  #Five h2 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  #Sidebar {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
